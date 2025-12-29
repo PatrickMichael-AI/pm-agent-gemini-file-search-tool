@@ -1,0 +1,3450 @@
+{
+    "name": "PM_KB_external_tutorial",
+    "flow": [
+        {
+            "id": 1,
+            "module": "gateway:CustomWebHook",
+            "version": 1,
+            "parameters": {
+                "hook": 3660893,
+                "maxResults": 1
+            },
+            "mapper": {},
+            "metadata": {
+                "designer": {
+                    "x": 0,
+                    "y": 0
+                },
+                "restore": {
+                    "parameters": {
+                        "hook": {
+                            "data": {
+                                "editable": "true"
+                            },
+                            "label": "pm_rotation_23"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "hook",
+                        "type": "hook:gateway-webhook",
+                        "label": "Webhook",
+                        "required": true
+                    },
+                    {
+                        "name": "maxResults",
+                        "type": "number",
+                        "label": "Maximum number of results"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "module": "gemini-ai:createACompletionGeminiPro",
+            "version": 1,
+            "parameters": {
+                "__IMTCONN__": 10024016
+            },
+            "mapper": {
+                "model": "gemini-flash-lite-latest",
+                "contents": [
+                    {
+                        "role": "model",
+                        "parts": [
+                            {
+                                "text": "# Company Knowledge Base\r\n\r\n## 1. Primary Focus: Technical Voice AI Development & Integration\r\n\r\n### 1.1. Core Technical Offering\r\n\r\n    - Service: Custom Voice AI development, rapid prototyping, and full-stack integration services.\r\n    - Focus: Building sophisticated Voice AI agents for businesses and development houses looking to implement their own solutions.\r\n    - Methodology: We bridge the gap between concept and a functional, scalable Voice AI agent by leveraging a proven, agile development process.\r\n\r\n### 1.2. Core Technology Stack\r\n\r\n    - Voice AI Platform: VAPI\r\n    - Integration & Automation: Make.com (formerly Integromat), Postman (for API testing)\r\n    - Data & Backend: Airtable, Google Drive & Gmail\r\n    - Booking & CRM: Cal.com, GoHighLevel (GHL)\r\n    - Communication: Twilio (for SMS notifications)\r\n\r\n### 1.3. Specialist Technical Capabilities\r\n\r\n    - Advanced Knowledge Retrieval: Building agents that can accurately query and respond from complex knowledge bases.\r\n    - Robust Message Taking & Routing: Creating reliable workflows for capturing detailed messages and routing them to the correct systems or personnel.\r\n    - Seamless Appointment Booking: Integrating directly with Cal.com and GoHighLevel calendars for real-time booking.\r\n    - Custom Workflow Automation: Using Make.com to connect the Voice AI to hundreds of other applications and services.\r\n\r\n### 1.4. Ideal Technical Client\r\n\r\n    - Development houses seeking to outsource or accelerate their Voice AI projects.\r\n    - Companies with in-house tech teams needing specialized expertise in VAPI and its integration ecosystem.\r\n    - Businesses requiring a deeply customized Voice AI solution integrated into their existing software stack.\r\n\r\n## 2. Core Value Proposition & Differentiators\r\n\r\n### 2.1. Primary Value Proposition (for general & technical inquiries)\r\n\r\n    For businesses and development teams looking to build and deploy effective Voice AI, Patrick Michael provides expert technical development and integration services. We leverage a proven tech stack centered on VAPI and Make.com to rapidly accelerate your journey from idea to a fully functional, custom Voice AI agent. We partner with you to build practical, scalable, and profitable AI solutions that are deeply integrated into your existing workflows.\r\n\r\n### 2.2. Key Technical & Business Service Capabilities\r\n\r\n    - Custom Development & Integration: We build the agent and the automations that connect it to your essential tools (CRMs, calendars, databases).\r\n    - Rapid Prototyping: We can quickly build and demonstrate a proof-of-concept agent to validate your ideas.\r\n    - Intelligent Lead Qualification: We build agents that meticulously qualify new inquiries based on your specific business rules.\r\n    - Dormant Database Monetization: We engineer strategies and build agents to re-engage 'cold' lists and uncover hidden revenue.\r\n    - Strategic Consulting: We provide expert guidance on both the technical implementation and the business strategy behind your Voice AI deployment.\r\n\r\n### 2.3. Key Differentiators (Patrick Michael \"Why Us?\")\r\n\r\n    - Full-Stack Integration Expertise: Deep, hands-on experience with our core tech stack (VAPI, Make.com, Airtable, GHL, Cal.com) ensures we can build robust, end-to-end solutions.\r\n    - Rapid Prototyping & Agile Development: Our process is designed to deliver functional prototypes and iterative improvements quickly, saving you time and resources.\r\n    - Proven Real-World Application: Our technical skills are demonstrated through successful applications in demanding sectors like Real Estate, Solar, and Property Development.\r\n    - Focus on Business Growth Metrics: We are developers who understand the bottom line; every technical solution is built with a clear focus on achieving tangible business outcomes like lead conversion and ROI.\r\n\r\n## 3. Application & Industry Use-Case Expertise (Proof of Capability)\r\n\r\nOur technical skills in Voice AI development and integration have been applied to solve critical business challenges in various sectors. These examples demonstrate our ability to build solutions that deliver real-world value.\r\n\r\n### 3.1. Real Estate Agencies (Residential Sales)\r\n\r\n    - Problem Solved: Agents wasting time on unqualified leads; dormant databases.\r\n    - Technical Application: Built agents to pre-qualify online leads based on budget/area and schedule viewings into GHL. Deployed campaigns to re-engage past buyer lists from an Airtable database.\r\n\r\n### 3.2. Real Estate Agencies (Commercial Sales & Leasing)\r\n\r\n    - Problem Solved: Brokers needing to perform high-volume, initial outreach for new mandates.\r\n    - Technical Application: Engineered targeted outreach agents that contact curated lists and qualify potential investors based on complex criteria, booking discovery calls into a shared Cal.com calendar.\r\n\r\n### 3.3. Estate Agents (Sales & Lettings Focus)\r\n\r\n    - Problem Solved: High volume of rental inquiries overwhelming agents and distracting from sales.\r\n    - Technical Application: Developed a unified agent to intelligently distinguish between rental and sales inquiries, pre-qualifying tenants and scheduling viewings, while also engaging the tenant database via SMS (Twilio) about purchasing opportunities.\r\n\r\n### 3.4. Property Developers (New Off-Plan Developments)\r\n\r\n    - Problem Solved: Massive, sudden influx of leads during a new launch overwhelming the sales team.\r\n    - Technical Application: Architected a highly scalable solution using VAPI to handle thousands of concurrent calls, qualifying buyers and pushing high-intent leads directly into a CRM like GoHighLevel.\r\n\r\n### 3.5. Solar Power Installation Companies\r\n\r\n    - Problem Solved: Sales consultants spending too much time on non-viable leads.\r\n    - Technical Application: Created agents with solar-specific pre-qualification logic (roof type, energy bill) that automatically book qualified site assessments into the team's Cal.com.\r\n\r\n## 4. General & Technical FAQs (Anticipated)\r\n\r\n### 4.1. General Business FAQs\r\n\r\n    - Q: How long does it take to set up? A: \"For standard use-cases like appointment booking, we can deploy very quickly due to our proven stack. Custom, deep integrations vary, but our agile process means you'll see a functional prototype in weeks, not months.\"\r\n    - Q: Is this expensive? A: \"We offer different engagement models, from project-based development to consulting. The goal is always to provide a clear ROI by saving you development time or by building an agent that generates revenue.\"\r\n    - Q: Does it sound robotic? A: \"We prioritize natural, engaging conversations using advanced voice technology and expert prompt engineering.\"\r\n\r\n### 4.2. Technical FAQs\r\n\r\n    - Q: What is your core tech stack? A: \"Our primary stack is VAPI for the voice platform, Make.com for automation and integration, Airtable for data management, and direct integrations with calendars like Cal.com and CRMs like GoHighLevel.\"\r\n    - Q: How do you handle integrations? A: \"We primarily use Make.com for its flexibility in connecting to thousands of apps via APIs and webhooks. For more complex needs, we can work with your team on custom API development.\"\r\n    - Q: What's your development process? A: \"We follow an agile methodology. We start with a technical discovery and scoping call, move to rapid prototyping to create a functional proof-of-concept, and then iterate based on your feedback to build out the full solution.\"\r\n    - Q: Can you integrate with our proprietary software? A: \"If your software has a documented API, it's very likely we can integrate with it using our toolset. This would be a key topic for a technical scoping call.\"\r\n​",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "role": "user",
+                        "parts": [
+                            {
+                                "text": "# User Question\n\n{{1.message.toolCalls[].function.arguments.caller_question}}",
+                                "type": "text"
+                            }
+                        ]
+                    }
+                ],
+                "generationConfig": {
+                    "topK": "40",
+                    "topP": "0.9",
+                    "temperature": "0.2",
+                    "thinkingConfig": {},
+                    "maxOutputTokens": "250",
+                    "responseMimeType": "application/json",
+                    "new_responseSchema": [
+                        {
+                            "type": "string",
+                            "description": "The response from the user",
+                            "property_name": "response"
+                        }
+                    ],
+                    "responseModalities": [
+                        "text"
+                    ]
+                },
+                "system_instruction": {
+                    "parts": [
+                        {
+                            "text": "# Role: Voice AI Knowledge Synthesizer\r\n\r\nYou are a low-latency Voice AI Knowledge Synthesizer. Your function: interpret user queries, search the knowledge base using the provided File Search Store context, and return concise, natural-sounding responses optimized for voice delivery."
+                        },
+                        {
+                            "text": "# Instructions\r\n\r\n1. **Parse Intent:** Identify the core information requested.\r\n2. **Search Knowledge Base:** Use the File Search Store context provided to find the exact answer.\r\n3. **Synthesize for Voice:**\r\n   - Extract only essential information\r\n   - Rewrite as brief, conversational sentences\r\n   - **No conversational filler** (no \"According to...\", \"The answer is...\", \"Sure, I can help...\")\r\n   - Prioritize brevity and clarity\r\n4. **Output Pure JSON:** Return ONLY the JSON object below. No markdown, no code blocks, no explanations."
+                        },
+                        {
+                            "text": "## Output Format\r\n\r\n{\r\n\"response\": \"<direct, concise answer>\"\r\n}"
+                        }
+                    ]
+                },
+                "file_search_store_name": [
+                    "fileSearchStores/pmassistantkbstore-bzlwxsecjuxx"
+                ],
+                "file_search_store_context": true
+            },
+            "metadata": {
+                "designer": {
+                    "x": 300,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "model": {
+                            "mode": "chose",
+                            "label": "Gemini Flash-Lite Latest"
+                        },
+                        "contents": {
+                            "mode": "chose",
+                            "items": [
+                                {
+                                    "role": {
+                                        "mode": "chose",
+                                        "label": "Model"
+                                    },
+                                    "parts": {
+                                        "mode": "chose",
+                                        "items": [
+                                            {
+                                                "type": {
+                                                    "mode": "chose",
+                                                    "label": "Text"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "role": {
+                                        "mode": "chose",
+                                        "label": "User"
+                                    },
+                                    "parts": {
+                                        "mode": "chose",
+                                        "items": [
+                                            {
+                                                "type": {
+                                                    "mode": "chose",
+                                                    "label": "Text"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "url_context": {
+                            "mode": "chose"
+                        },
+                        "code_execution": {
+                            "mode": "chose"
+                        },
+                        "safetySettings": {
+                            "mode": "chose"
+                        },
+                        "generationConfig": {
+                            "nested": {
+                                "stopSequences": {
+                                    "mode": "chose"
+                                },
+                                "thinkingConfig": {
+                                    "nested": {
+                                        "thinking_level": {
+                                            "mode": "chose",
+                                            "label": "Empty"
+                                        },
+                                        "include_thoughts": {
+                                            "mode": "chose"
+                                        }
+                                    }
+                                },
+                                "mediaResolution": {
+                                    "mode": "chose",
+                                    "label": "Empty"
+                                },
+                                "responseMimeType": {
+                                    "mode": "chose",
+                                    "label": "JSON Output"
+                                },
+                                "new_responseSchema": {
+                                    "mode": "chose",
+                                    "items": [
+                                        {
+                                            "type": {
+                                                "mode": "chose",
+                                                "label": "String",
+                                                "nested": [
+                                                    {
+                                                        "help": null,
+                                                        "name": "property_name",
+                                                        "spec": null,
+                                                        "type": "text",
+                                                        "label": "Property Name",
+                                                        "options": null,
+                                                        "required": true
+                                                    },
+                                                    {
+                                                        "help": null,
+                                                        "name": "description",
+                                                        "spec": null,
+                                                        "type": "text",
+                                                        "label": "Description",
+                                                        "options": null,
+                                                        "required": false
+                                                    },
+                                                    {
+                                                        "help": "The format is not being validated post generation. Add guidance in the prompt and/or property description.",
+                                                        "name": "format",
+                                                        "spec": null,
+                                                        "type": "select",
+                                                        "label": "Format",
+                                                        "options": [
+                                                            {
+                                                                "label": "Date-Time",
+                                                                "value": "date-time"
+                                                            },
+                                                            {
+                                                                "label": "Date",
+                                                                "value": "date"
+                                                            },
+                                                            {
+                                                                "label": "Time",
+                                                                "value": "time"
+                                                            },
+                                                            {
+                                                                "label": "Email",
+                                                                "value": "email"
+                                                            },
+                                                            {
+                                                                "label": "Hostname",
+                                                                "value": "hostname"
+                                                            },
+                                                            {
+                                                                "label": "IPv4",
+                                                                "value": "ipv4"
+                                                            },
+                                                            {
+                                                                "label": "IPv6",
+                                                                "value": "ipv6"
+                                                            },
+                                                            {
+                                                                "label": "URI",
+                                                                "value": "uri"
+                                                            },
+                                                            {
+                                                                "label": "UUID",
+                                                                "value": "uuid"
+                                                            },
+                                                            {
+                                                                "label": "Regex",
+                                                                "value": "regex"
+                                                            }
+                                                        ],
+                                                        "required": null
+                                                    },
+                                                    {
+                                                        "help": null,
+                                                        "name": "required",
+                                                        "spec": null,
+                                                        "type": "boolean",
+                                                        "label": "Required Property?",
+                                                        "options": null,
+                                                        "required": null
+                                                    },
+                                                    {
+                                                        "help": null,
+                                                        "name": "array",
+                                                        "spec": null,
+                                                        "type": "boolean",
+                                                        "label": "Make property an array?",
+                                                        "options": null,
+                                                        "required": null
+                                                    }
+                                                ]
+                                            },
+                                            "array": {
+                                                "mode": "chose"
+                                            },
+                                            "format": {
+                                                "mode": "chose",
+                                                "label": "Empty"
+                                            },
+                                            "required": {
+                                                "mode": "chose"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "responseModalities": {
+                                    "mode": "chose"
+                                }
+                            }
+                        },
+                        "system_instruction": {
+                            "nested": {
+                                "parts": {
+                                    "mode": "chose",
+                                    "items": [
+                                        null,
+                                        null,
+                                        null
+                                    ]
+                                }
+                            }
+                        },
+                        "google_maps_context": {
+                            "mode": "chose"
+                        },
+                        "google_search_context": {
+                            "mode": "chose"
+                        },
+                        "file_search_store_name": {
+                            "mode": "chose",
+                            "label": [
+                                "pm_assistant_kb_store"
+                            ]
+                        },
+                        "file_search_store_context": {
+                            "mode": "chose"
+                        },
+                        "function_declarations_context": {
+                            "mode": "chose"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "gemini-ai-q9zyjp"
+                            },
+                            "label": "PM_Gemini"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:gemini-ai-q9zyjp",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "model",
+                        "type": "select",
+                        "label": "AI Model",
+                        "required": true
+                    },
+                    {
+                        "name": "contents",
+                        "spec": [
+                            {
+                                "name": "role",
+                                "type": "select",
+                                "label": "Role",
+                                "options": [
+                                    {
+                                        "label": "User",
+                                        "value": "user"
+                                    },
+                                    {
+                                        "label": "Model",
+                                        "value": "model"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "parts",
+                                "spec": [
+                                    {
+                                        "name": "type",
+                                        "type": "select",
+                                        "label": "Message Type",
+                                        "options": [
+                                            {
+                                                "label": "Text",
+                                                "value": "text",
+                                                "nested": [
+                                                    {
+                                                        "name": "text",
+                                                        "type": "text",
+                                                        "label": "Text",
+                                                        "required": false
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "label": "File",
+                                                "value": "file",
+                                                "nested": [
+                                                    {
+                                                        "name": "file_data",
+                                                        "spec": [
+                                                            {
+                                                                "name": "mime_type",
+                                                                "type": "text",
+                                                                "label": "Mime Type",
+                                                                "required": false
+                                                            },
+                                                            {
+                                                                "help": "You get this from the 'Upload a File' module.",
+                                                                "name": "file_uri",
+                                                                "type": "text",
+                                                                "label": "File URI",
+                                                                "required": false
+                                                            }
+                                                        ],
+                                                        "type": "collection",
+                                                        "label": "File Data",
+                                                        "required": false
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "label": "Function Call",
+                                                "value": "functionCall",
+                                                "nested": [
+                                                    {
+                                                        "name": "functionCall",
+                                                        "spec": [
+                                                            {
+                                                                "help": "The name of the function to call.",
+                                                                "name": "name",
+                                                                "type": "text",
+                                                                "label": "Name",
+                                                                "required": true,
+                                                                "validate": {
+                                                                    "max": 64
+                                                                }
+                                                            },
+                                                            {
+                                                                "help": "The function parameters and values in JSON object format.",
+                                                                "name": "args",
+                                                                "type": "json",
+                                                                "label": "Arguments"
+                                                            },
+                                                            {
+                                                                "help": "The unique ID of the function call.",
+                                                                "name": "id",
+                                                                "type": "text",
+                                                                "label": "Function Call ID"
+                                                            }
+                                                        ],
+                                                        "type": "collection",
+                                                        "label": "Function Call"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "label": "Function Response",
+                                                "value": "functionResponse",
+                                                "nested": [
+                                                    {
+                                                        "name": "functionResponse",
+                                                        "spec": [
+                                                            {
+                                                                "help": "The name of the function to call.",
+                                                                "name": "name",
+                                                                "type": "text",
+                                                                "label": "Name",
+                                                                "required": true,
+                                                                "validate": {
+                                                                    "max": 64
+                                                                }
+                                                            },
+                                                            {
+                                                                "help": "The function response in JSON object format.",
+                                                                "name": "response",
+                                                                "type": "json",
+                                                                "label": "Response",
+                                                                "required": true
+                                                            }
+                                                        ],
+                                                        "type": "collection",
+                                                        "label": "Function Response"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "thoughtSignature",
+                                        "type": "text",
+                                        "label": "Thought Signature"
+                                    }
+                                ],
+                                "type": "array",
+                                "label": "Parts"
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Messages",
+                        "required": true
+                    },
+                    {
+                        "name": "system_instruction",
+                        "spec": [
+                            {
+                                "name": "parts",
+                                "spec": {
+                                    "name": "value",
+                                    "spec": [
+                                        {
+                                            "name": "text",
+                                            "type": "text",
+                                            "label": "Value"
+                                        }
+                                    ],
+                                    "type": "collection",
+                                    "label": "Prompt"
+                                },
+                                "type": "array",
+                                "label": "Prompts"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "System Instructions"
+                    },
+                    {
+                        "name": "safetySettings",
+                        "spec": [
+                            {
+                                "name": "category",
+                                "type": "select",
+                                "label": "Category",
+                                "options": [
+                                    {
+                                        "label": "Harassment content",
+                                        "value": "HARM_CATEGORY_HARASSMENT"
+                                    },
+                                    {
+                                        "label": "Hate speech and content",
+                                        "value": "HARM_CATEGORY_HATE_SPEECH"
+                                    },
+                                    {
+                                        "label": "Sexually explicit content.",
+                                        "value": "HARM_CATEGORY_SEXUALLY_EXPLICIT"
+                                    },
+                                    {
+                                        "label": "Dangerous content:",
+                                        "value": "HARM_CATEGORY_DANGEROUS_CONTENT"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "threshold",
+                                "type": "select",
+                                "label": "Threshold",
+                                "options": [
+                                    {
+                                        "label": "Block low and above.",
+                                        "value": "BLOCK_LOW_AND_ABOVE"
+                                    },
+                                    {
+                                        "label": "Block medium and above.",
+                                        "value": "BLOCK_MEDIUM_AND_ABOVE"
+                                    },
+                                    {
+                                        "label": "Block only high.",
+                                        "value": "BLOCK_ONLY_HIGH"
+                                    },
+                                    {
+                                        "label": "Block none.",
+                                        "value": "BLOCK_NONE"
+                                    }
+                                ]
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Safety Settings"
+                    },
+                    {
+                        "name": "generationConfig",
+                        "spec": [
+                            {
+                                "name": "stopSequences",
+                                "spec": {
+                                    "name": "value",
+                                    "type": "text",
+                                    "label": "Stop Sequence"
+                                },
+                                "type": "array",
+                                "label": "Stop Sequences"
+                            },
+                            {
+                                "name": "responseModalities",
+                                "type": "select",
+                                "label": "Response Modalities",
+                                "multiple": true,
+                                "validate": {
+                                    "enum": [
+                                        "text",
+                                        "image"
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "maxOutputTokens",
+                                "type": "number",
+                                "label": "Max Output Tokens"
+                            },
+                            {
+                                "name": "temperature",
+                                "type": "number",
+                                "label": "Temperature",
+                                "validate": {
+                                    "max": 1,
+                                    "min": 0
+                                }
+                            },
+                            {
+                                "name": "topP",
+                                "type": "number",
+                                "label": "Top P",
+                                "validate": {
+                                    "max": 1,
+                                    "min": 0
+                                }
+                            },
+                            {
+                                "name": "topK",
+                                "type": "number",
+                                "label": "Top K"
+                            },
+                            {
+                                "name": "thinkingConfig",
+                                "spec": [
+                                    {
+                                        "name": "thinkingBudget",
+                                        "type": "number",
+                                        "label": "Thinking Budget"
+                                    },
+                                    {
+                                        "name": "include_thoughts",
+                                        "type": "boolean",
+                                        "label": "Include Thoughts"
+                                    },
+                                    {
+                                        "name": "thinking_level",
+                                        "type": "select",
+                                        "label": "Thinking Level",
+                                        "validate": {
+                                            "enum": [
+                                                "low",
+                                                "high"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "type": "collection",
+                                "label": "Thinking Config"
+                            },
+                            {
+                                "name": "mediaResolution",
+                                "type": "select",
+                                "label": "Media Resolution",
+                                "validate": {
+                                    "enum": [
+                                        "media_resolution_low",
+                                        "media_resolution_medium",
+                                        "media_resolution_high"
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "responseMimeType",
+                                "type": "select",
+                                "label": "Response Format"
+                            },
+                            {
+                                "name": "responseSchema",
+                                "type": "any",
+                                "label": "Response Schema (Deprecated)"
+                            },
+                            {
+                                "name": "new_responseSchema",
+                                "spec": [
+                                    {
+                                        "name": "type",
+                                        "type": "select",
+                                        "label": "Value Type",
+                                        "options": [
+                                            {
+                                                "label": "String",
+                                                "value": "string",
+                                                "nested": "rpc://gemini-ai/1/createResponseSchema?type=string"
+                                            },
+                                            {
+                                                "label": "Enum",
+                                                "value": "enum",
+                                                "nested": "rpc://gemini-ai/1/createResponseSchema?type=enum"
+                                            },
+                                            {
+                                                "label": "Number",
+                                                "value": "number",
+                                                "nested": "rpc://gemini-ai/1/createResponseSchema?type=number"
+                                            },
+                                            {
+                                                "label": "Integer",
+                                                "value": "integer",
+                                                "nested": "rpc://gemini-ai/1/createResponseSchema?type=integer"
+                                            },
+                                            {
+                                                "label": "Boolean",
+                                                "value": "boolean",
+                                                "nested": "rpc://gemini-ai/1/createResponseSchema?type=boolean"
+                                            },
+                                            {
+                                                "label": "Object",
+                                                "value": "object",
+                                                "nested": "rpc://gemini-ai/1/createResponseSchema?type=object"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "type": "array",
+                                "label": "Response Schema"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Generation configurations"
+                    },
+                    {
+                        "name": "tools",
+                        "type": "any",
+                        "label": "Tools"
+                    },
+                    {
+                        "name": "tool_config",
+                        "type": "any",
+                        "label": "Tool Config"
+                    },
+                    {
+                        "name": "function_declarations_context",
+                        "type": "boolean",
+                        "label": "Function Declarations Grounding"
+                    },
+                    {
+                        "name": "url_context",
+                        "type": "boolean",
+                        "label": "URL Context"
+                    },
+                    {
+                        "name": "google_search_context",
+                        "type": "boolean",
+                        "label": "Google Search Grounding"
+                    },
+                    {
+                        "name": "code_execution",
+                        "type": "boolean",
+                        "label": "Code Execution"
+                    },
+                    {
+                        "name": "google_maps_context",
+                        "type": "boolean",
+                        "label": "Google Maps Grounding"
+                    },
+                    {
+                        "name": "file_search_store_context",
+                        "type": "boolean",
+                        "label": "File Search Store Context"
+                    },
+                    {
+                        "name": "file_search_store_name",
+                        "type": "select",
+                        "label": "File Search Store Name",
+                        "multiple": true,
+                        "required": true
+                    },
+                    {
+                        "name": "meta_data_query",
+                        "type": "text",
+                        "label": "Metadata Query"
+                    }
+                ],
+                "advanced": true
+            }
+        },
+        {
+            "id": 5,
+            "module": "json:CreateJSON",
+            "version": 1,
+            "parameters": {
+                "type": 269076,
+                "space": ""
+            },
+            "mapper": {
+                "results": [
+                    {
+                        "result": "{{2.result.response}}",
+                        "toolCallId": "{{1.message.toolCalls[].id}}"
+                    }
+                ]
+            },
+            "metadata": {
+                "designer": {
+                    "x": 600,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "results": {
+                            "mode": "chose",
+                            "items": [
+                                null
+                            ]
+                        }
+                    },
+                    "parameters": {
+                        "type": {
+                            "label": "toolReturn"
+                        },
+                        "space": {
+                            "label": "Empty"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "type",
+                        "type": "udt",
+                        "label": "Data structure",
+                        "required": true
+                    },
+                    {
+                        "name": "space",
+                        "type": "select",
+                        "label": "Indentation",
+                        "validate": {
+                            "enum": [
+                                "tab",
+                                "2",
+                                "4"
+                            ]
+                        }
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "results",
+                        "spec": {
+                            "name": "value",
+                            "spec": [
+                                {
+                                    "name": "toolCallId",
+                                    "type": "text",
+                                    "label": null
+                                },
+                                {
+                                    "name": "result",
+                                    "type": "text",
+                                    "label": null
+                                }
+                            ],
+                            "type": "collection"
+                        },
+                        "type": "array",
+                        "label": "Results"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "module": "gateway:WebhookRespond",
+            "version": 1,
+            "parameters": {},
+            "mapper": {
+                "body": "{{5.json}}",
+                "status": "200",
+                "headers": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ]
+            },
+            "metadata": {
+                "designer": {
+                    "x": 900,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "headers": {
+                            "mode": "chose",
+                            "items": [
+                                null
+                            ]
+                        }
+                    }
+                },
+                "expect": [
+                    {
+                        "name": "status",
+                        "type": "uinteger",
+                        "label": "Status",
+                        "required": true,
+                        "validate": {
+                            "min": 100
+                        }
+                    },
+                    {
+                        "name": "body",
+                        "type": "any",
+                        "label": "Body"
+                    },
+                    {
+                        "name": "headers",
+                        "spec": [
+                            {
+                                "name": "key",
+                                "type": "text",
+                                "label": "Key",
+                                "required": true,
+                                "validate": {
+                                    "max": 256
+                                }
+                            },
+                            {
+                                "name": "value",
+                                "type": "text",
+                                "label": "Value",
+                                "required": true,
+                                "validate": {
+                                    "max": 4096
+                                }
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Custom headers",
+                        "validate": {
+                            "maxItems": 16
+                        }
+                    }
+                ],
+                "advanced": true
+            }
+        }
+    ],
+    "metadata": {
+        "instant": true,
+        "version": 1,
+        "scenario": {
+            "roundtrips": 1,
+            "maxErrors": 3,
+            "autoCommit": true,
+            "autoCommitTriggerLast": true,
+            "sequential": false,
+            "slots": null,
+            "confidential": false,
+            "dataloss": false,
+            "dlq": false,
+            "freshVariables": false
+        },
+        "designer": {
+            "orphans": [
+                [
+                    {
+                        "id": 33,
+                        "module": "util:BasicTrigger",
+                        "version": 1,
+                        "parameters": {
+                            "values": [
+                                {
+                                    "spec": [
+                                        {
+                                            "name": "trigger",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "mapper": {},
+                        "metadata": {
+                            "designer": {
+                                "x": 0,
+                                "y": 600,
+                                "messages": [
+                                    {
+                                        "category": "link",
+                                        "severity": "warning",
+                                        "message": "A trigger must be the first module in a scenario."
+                                    }
+                                ]
+                            },
+                            "restore": {
+                                "parameters": {
+                                    "values": {
+                                        "items": [
+                                            {
+                                                "spec": {
+                                                    "mode": "chose",
+                                                    "items": [
+                                                        null
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "parameters": [
+                                {
+                                    "name": "values",
+                                    "spec": [
+                                        {
+                                            "name": "spec",
+                                            "spec": [
+                                                {
+                                                    "name": "name",
+                                                    "type": "text",
+                                                    "label": "Name",
+                                                    "required": true
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "type": "text",
+                                                    "label": "Value",
+                                                    "required": true
+                                                }
+                                            ],
+                                            "type": "array",
+                                            "label": "Items",
+                                            "required": true
+                                        }
+                                    ],
+                                    "type": "array",
+                                    "label": "Bundles",
+                                    "required": true
+                                }
+                            ],
+                            "interface": [
+                                {
+                                    "name": "trigger",
+                                    "type": "text",
+                                    "label": "trigger"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 34,
+                        "module": "http:MakeRequest",
+                        "version": 4,
+                        "parameters": {
+                            "tlsType": "",
+                            "proxyKeychain": "",
+                            "apiKeyKeychain": 154742,
+                            "authenticationType": "apiKey"
+                        },
+                        "mapper": {
+                            "url": "https://generativelanguage.googleapis.com/v1beta/fileSearchStores/pmassistantkbstore-fusy2i7guej0",
+                            "method": "delete",
+                            "headers": [
+                                {
+                                    "name": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "shareCookies": false,
+                            "parseResponse": true,
+                            "allowRedirects": true,
+                            "queryParameters": [
+                                {
+                                    "name": "key",
+                                    "value": "AIzaSyBOwSSFqFpGVA0_1FZBTdntrQO-X3StMvY"
+                                }
+                            ],
+                            "stopOnHttpError": true,
+                            "requestCompressedContent": true
+                        },
+                        "metadata": {
+                            "designer": {
+                                "x": 300,
+                                "y": 600,
+                                "name": "Delete Store"
+                            },
+                            "restore": {
+                                "expect": {
+                                    "method": {
+                                        "mode": "chose",
+                                        "label": "DELETE"
+                                    },
+                                    "headers": {
+                                        "mode": "chose",
+                                        "items": [
+                                            null
+                                        ]
+                                    },
+                                    "contentType": {
+                                        "label": "Empty"
+                                    },
+                                    "shareCookies": {
+                                        "mode": "chose"
+                                    },
+                                    "parseResponse": {
+                                        "mode": "chose"
+                                    },
+                                    "allowRedirects": {
+                                        "mode": "chose"
+                                    },
+                                    "paginationType": {
+                                        "label": "Empty"
+                                    },
+                                    "queryParameters": {
+                                        "mode": "chose",
+                                        "items": [
+                                            null
+                                        ]
+                                    },
+                                    "stopOnHttpError": {
+                                        "mode": "chose"
+                                    },
+                                    "requestCompressedContent": {
+                                        "mode": "chose"
+                                    }
+                                },
+                                "parameters": {
+                                    "tlsType": {
+                                        "label": "Empty"
+                                    },
+                                    "proxyKeychain": {
+                                        "label": "Choose a key"
+                                    },
+                                    "apiKeyKeychain": {
+                                        "label": "PM_gemini_key"
+                                    },
+                                    "authenticationType": {
+                                        "label": "API keyUse when the service requires an API key."
+                                    }
+                                }
+                            },
+                            "parameters": [
+                                {
+                                    "name": "authenticationType",
+                                    "type": "select",
+                                    "label": "Authentication type",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "noAuth",
+                                            "apiKey",
+                                            "basicAuth",
+                                            "oAuth"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "tlsType",
+                                    "type": "select",
+                                    "label": "Transport layer security (TLS)",
+                                    "validate": {
+                                        "enum": [
+                                            "mTls",
+                                            "tls"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "proxyKeychain",
+                                    "type": "keychain:proxy",
+                                    "label": "Proxy"
+                                },
+                                {
+                                    "name": "apiKeyKeychain",
+                                    "type": "keychain:apikeyauth",
+                                    "label": "Credentials",
+                                    "required": true
+                                }
+                            ],
+                            "expect": [
+                                {
+                                    "name": "url",
+                                    "type": "url",
+                                    "label": "URL",
+                                    "required": true
+                                },
+                                {
+                                    "name": "method",
+                                    "type": "select",
+                                    "label": "Method",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "get",
+                                            "head",
+                                            "post",
+                                            "put",
+                                            "patch",
+                                            "delete",
+                                            "options"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "headers",
+                                    "spec": {
+                                        "name": "value",
+                                        "spec": [
+                                            {
+                                                "name": "name",
+                                                "type": "text",
+                                                "label": "Name",
+                                                "required": true,
+                                                "validate": {
+                                                    "pattern": "^[-!#$%&'*+.^_`|~0-9A-Za-z]+$"
+                                                }
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": "text",
+                                                "label": "Value"
+                                            }
+                                        ],
+                                        "type": "collection",
+                                        "label": "Header"
+                                    },
+                                    "type": "array",
+                                    "label": "Headers"
+                                },
+                                {
+                                    "name": "queryParameters",
+                                    "spec": {
+                                        "name": "value",
+                                        "spec": [
+                                            {
+                                                "name": "name",
+                                                "type": "text",
+                                                "label": "Name",
+                                                "required": true
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": "text",
+                                                "label": "Value"
+                                            }
+                                        ],
+                                        "type": "collection",
+                                        "label": "Parameter"
+                                    },
+                                    "type": "array",
+                                    "label": "Query parameters"
+                                },
+                                {
+                                    "name": "contentType",
+                                    "type": "select",
+                                    "label": "Body content type",
+                                    "validate": {
+                                        "enum": [
+                                            "json",
+                                            "multipart",
+                                            "urlEncoded",
+                                            "custom"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "parseResponse",
+                                    "type": "boolean",
+                                    "label": "Parse response",
+                                    "required": true
+                                },
+                                {
+                                    "name": "stopOnHttpError",
+                                    "type": "boolean",
+                                    "label": "Return error if HTTP request fails",
+                                    "required": true
+                                },
+                                {
+                                    "name": "timeout",
+                                    "type": "uinteger",
+                                    "label": "Timeout",
+                                    "validate": {
+                                        "max": 300,
+                                        "min": 1
+                                    }
+                                },
+                                {
+                                    "name": "allowRedirects",
+                                    "type": "boolean",
+                                    "label": "Allow redirects",
+                                    "required": true
+                                },
+                                {
+                                    "name": "shareCookies",
+                                    "type": "boolean",
+                                    "label": "Share cookies with other HTTP modules",
+                                    "required": true
+                                },
+                                {
+                                    "name": "requestCompressedContent",
+                                    "type": "boolean",
+                                    "label": "Request compressed content",
+                                    "required": true
+                                },
+                                {
+                                    "name": "paginationType",
+                                    "type": "select",
+                                    "label": "Pagination type",
+                                    "validate": {
+                                        "enum": [
+                                            "offsetBased",
+                                            "pageBased",
+                                            "urlBased",
+                                            "tokenBased"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "interface": [
+                                {
+                                    "name": "data",
+                                    "type": "any",
+                                    "label": "Data"
+                                },
+                                {
+                                    "name": "statusCode",
+                                    "type": "number",
+                                    "label": "Status Code"
+                                },
+                                {
+                                    "name": "headers",
+                                    "spec": [
+                                        {
+                                            "name": "content-length",
+                                            "type": "text",
+                                            "label": "Content-Length"
+                                        },
+                                        {
+                                            "name": "content-encoding",
+                                            "type": "text",
+                                            "label": "Content-Encoding"
+                                        },
+                                        {
+                                            "name": "content-type",
+                                            "type": "text",
+                                            "label": "Content-Type"
+                                        },
+                                        {
+                                            "name": "server",
+                                            "type": "text",
+                                            "label": "Server"
+                                        },
+                                        {
+                                            "name": "cache-control",
+                                            "type": "text",
+                                            "label": "Cache-Control"
+                                        },
+                                        {
+                                            "name": "set-cookie",
+                                            "spec": {
+                                                "type": "text"
+                                            },
+                                            "type": "array",
+                                            "label": "Set-Cookie"
+                                        }
+                                    ],
+                                    "type": "collection",
+                                    "label": "Headers"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                [
+                    {
+                        "id": 30,
+                        "module": "util:BasicTrigger",
+                        "version": 1,
+                        "parameters": {
+                            "values": [
+                                {
+                                    "spec": [
+                                        {
+                                            "name": "trigger",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "mapper": {},
+                        "metadata": {
+                            "designer": {
+                                "x": 0,
+                                "y": 900,
+                                "messages": [
+                                    {
+                                        "category": "link",
+                                        "severity": "warning",
+                                        "message": "A trigger must be the first module in a scenario."
+                                    }
+                                ]
+                            },
+                            "restore": {
+                                "parameters": {
+                                    "values": {
+                                        "items": [
+                                            {
+                                                "spec": {
+                                                    "mode": "chose",
+                                                    "items": [
+                                                        null
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "parameters": [
+                                {
+                                    "name": "values",
+                                    "spec": [
+                                        {
+                                            "name": "spec",
+                                            "spec": [
+                                                {
+                                                    "name": "name",
+                                                    "type": "text",
+                                                    "label": "Name",
+                                                    "required": true
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "type": "text",
+                                                    "label": "Value",
+                                                    "required": true
+                                                }
+                                            ],
+                                            "type": "array",
+                                            "label": "Items",
+                                            "required": true
+                                        }
+                                    ],
+                                    "type": "array",
+                                    "label": "Bundles",
+                                    "required": true
+                                }
+                            ],
+                            "interface": [
+                                {
+                                    "name": "trigger",
+                                    "type": "text",
+                                    "label": "trigger"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 28,
+                        "module": "http:MakeRequest",
+                        "version": 4,
+                        "parameters": {
+                            "tlsType": "",
+                            "proxyKeychain": "",
+                            "apiKeyKeychain": 154742,
+                            "authenticationType": "apiKey"
+                        },
+                        "mapper": {
+                            "url": "https://generativelanguage.googleapis.com/v1beta/fileSearchStores",
+                            "method": "post",
+                            "headers": [
+                                {
+                                    "name": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "contentType": "json",
+                            "inputMethod": "jsonString",
+                            "shareCookies": false,
+                            "parseResponse": true,
+                            "allowRedirects": true,
+                            "queryParameters": [
+                                {
+                                    "name": "key",
+                                    "value": "AIzaSyBOwSSFqFpGVA0_1FZBTdntrQO-X3StMvY"
+                                }
+                            ],
+                            "stopOnHttpError": true,
+                            "jsonStringBodyContent": "{ \"displayName\": \"pm_assistant_kb_store\" }",
+                            "requestCompressedContent": true
+                        },
+                        "metadata": {
+                            "designer": {
+                                "x": 300,
+                                "y": 900,
+                                "name": "Create Store"
+                            },
+                            "restore": {
+                                "expect": {
+                                    "method": {
+                                        "mode": "chose",
+                                        "label": "POST"
+                                    },
+                                    "headers": {
+                                        "mode": "chose",
+                                        "items": [
+                                            null
+                                        ]
+                                    },
+                                    "contentType": {
+                                        "label": "application/jsonEnter data in the JSON format, as a string or using a data structure."
+                                    },
+                                    "inputMethod": {
+                                        "label": "JSON stringEnter the JSON body as a raw text string. If values contain JSON reserved characters, you must escape them manually."
+                                    },
+                                    "shareCookies": {
+                                        "mode": "chose"
+                                    },
+                                    "parseResponse": {
+                                        "mode": "chose"
+                                    },
+                                    "allowRedirects": {
+                                        "mode": "chose"
+                                    },
+                                    "paginationType": {
+                                        "label": "Empty"
+                                    },
+                                    "queryParameters": {
+                                        "mode": "chose",
+                                        "items": [
+                                            null
+                                        ]
+                                    },
+                                    "stopOnHttpError": {
+                                        "mode": "chose"
+                                    },
+                                    "requestCompressedContent": {
+                                        "mode": "chose"
+                                    }
+                                },
+                                "parameters": {
+                                    "tlsType": {
+                                        "label": "Empty"
+                                    },
+                                    "proxyKeychain": {
+                                        "label": "Choose a key"
+                                    },
+                                    "apiKeyKeychain": {
+                                        "label": "PM_gemini_key"
+                                    },
+                                    "authenticationType": {
+                                        "label": "API keyUse when the service requires an API key."
+                                    }
+                                }
+                            },
+                            "parameters": [
+                                {
+                                    "name": "authenticationType",
+                                    "type": "select",
+                                    "label": "Authentication type",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "noAuth",
+                                            "apiKey",
+                                            "basicAuth",
+                                            "oAuth"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "tlsType",
+                                    "type": "select",
+                                    "label": "Transport layer security (TLS)",
+                                    "validate": {
+                                        "enum": [
+                                            "mTls",
+                                            "tls"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "proxyKeychain",
+                                    "type": "keychain:proxy",
+                                    "label": "Proxy"
+                                },
+                                {
+                                    "name": "apiKeyKeychain",
+                                    "type": "keychain:apikeyauth",
+                                    "label": "Credentials",
+                                    "required": true
+                                }
+                            ],
+                            "expect": [
+                                {
+                                    "name": "url",
+                                    "type": "url",
+                                    "label": "URL",
+                                    "required": true
+                                },
+                                {
+                                    "name": "method",
+                                    "type": "select",
+                                    "label": "Method",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "get",
+                                            "head",
+                                            "post",
+                                            "put",
+                                            "patch",
+                                            "delete",
+                                            "options"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "headers",
+                                    "spec": {
+                                        "name": "value",
+                                        "spec": [
+                                            {
+                                                "name": "name",
+                                                "type": "text",
+                                                "label": "Name",
+                                                "required": true,
+                                                "validate": {
+                                                    "pattern": "^[-!#$%&'*+.^_`|~0-9A-Za-z]+$"
+                                                }
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": "text",
+                                                "label": "Value"
+                                            }
+                                        ],
+                                        "type": "collection",
+                                        "label": "Header"
+                                    },
+                                    "type": "array",
+                                    "label": "Headers"
+                                },
+                                {
+                                    "name": "queryParameters",
+                                    "spec": {
+                                        "name": "value",
+                                        "spec": [
+                                            {
+                                                "name": "name",
+                                                "type": "text",
+                                                "label": "Name",
+                                                "required": true
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": "text",
+                                                "label": "Value"
+                                            }
+                                        ],
+                                        "type": "collection",
+                                        "label": "Parameter"
+                                    },
+                                    "type": "array",
+                                    "label": "Query parameters"
+                                },
+                                {
+                                    "name": "contentType",
+                                    "type": "select",
+                                    "label": "Body content type",
+                                    "validate": {
+                                        "enum": [
+                                            "json",
+                                            "multipart",
+                                            "urlEncoded",
+                                            "custom"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "parseResponse",
+                                    "type": "boolean",
+                                    "label": "Parse response",
+                                    "required": true
+                                },
+                                {
+                                    "name": "stopOnHttpError",
+                                    "type": "boolean",
+                                    "label": "Return error if HTTP request fails",
+                                    "required": true
+                                },
+                                {
+                                    "name": "timeout",
+                                    "type": "uinteger",
+                                    "label": "Timeout",
+                                    "validate": {
+                                        "max": 300,
+                                        "min": 1
+                                    }
+                                },
+                                {
+                                    "name": "allowRedirects",
+                                    "type": "boolean",
+                                    "label": "Allow redirects",
+                                    "required": true
+                                },
+                                {
+                                    "name": "shareCookies",
+                                    "type": "boolean",
+                                    "label": "Share cookies with other HTTP modules",
+                                    "required": true
+                                },
+                                {
+                                    "name": "requestCompressedContent",
+                                    "type": "boolean",
+                                    "label": "Request compressed content",
+                                    "required": true
+                                },
+                                {
+                                    "name": "inputMethod",
+                                    "type": "select",
+                                    "label": "Body input method",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "dataStructure",
+                                            "jsonString"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "jsonStringBodyContent",
+                                    "type": "text",
+                                    "label": "Body content",
+                                    "required": true
+                                },
+                                {
+                                    "name": "paginationType",
+                                    "type": "select",
+                                    "label": "Pagination type",
+                                    "validate": {
+                                        "enum": [
+                                            "offsetBased",
+                                            "pageBased",
+                                            "urlBased",
+                                            "tokenBased"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "interface": [
+                                {
+                                    "name": "data",
+                                    "type": "any",
+                                    "label": "Data"
+                                },
+                                {
+                                    "name": "statusCode",
+                                    "type": "number",
+                                    "label": "Status Code"
+                                },
+                                {
+                                    "name": "headers",
+                                    "spec": [
+                                        {
+                                            "name": "content-length",
+                                            "type": "text",
+                                            "label": "Content-Length"
+                                        },
+                                        {
+                                            "name": "content-encoding",
+                                            "type": "text",
+                                            "label": "Content-Encoding"
+                                        },
+                                        {
+                                            "name": "content-type",
+                                            "type": "text",
+                                            "label": "Content-Type"
+                                        },
+                                        {
+                                            "name": "server",
+                                            "type": "text",
+                                            "label": "Server"
+                                        },
+                                        {
+                                            "name": "cache-control",
+                                            "type": "text",
+                                            "label": "Cache-Control"
+                                        },
+                                        {
+                                            "name": "set-cookie",
+                                            "spec": {
+                                                "type": "text"
+                                            },
+                                            "type": "array",
+                                            "label": "Set-Cookie"
+                                        }
+                                    ],
+                                    "type": "collection",
+                                    "label": "Headers"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                [
+                    {
+                        "id": 6,
+                        "module": "util:BasicTrigger",
+                        "version": 1,
+                        "parameters": {
+                            "values": [
+                                {
+                                    "spec": [
+                                        {
+                                            "name": "run",
+                                            "value": "now"
+                                        },
+                                        {
+                                            "name": "file_name",
+                                            "value": "files/16ny1b1rnqr7"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "mapper": {},
+                        "metadata": {
+                            "designer": {
+                                "x": 0,
+                                "y": 1200,
+                                "messages": [
+                                    {
+                                        "category": "link",
+                                        "severity": "warning",
+                                        "message": "A trigger must be the first module in a scenario."
+                                    }
+                                ]
+                            },
+                            "restore": {
+                                "parameters": {
+                                    "values": {
+                                        "items": [
+                                            {
+                                                "spec": {
+                                                    "mode": "chose",
+                                                    "items": [
+                                                        null,
+                                                        null
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "parameters": [
+                                {
+                                    "name": "values",
+                                    "spec": [
+                                        {
+                                            "name": "spec",
+                                            "spec": [
+                                                {
+                                                    "name": "name",
+                                                    "type": "text",
+                                                    "label": "Name",
+                                                    "required": true
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "type": "text",
+                                                    "label": "Value",
+                                                    "required": true
+                                                }
+                                            ],
+                                            "type": "array",
+                                            "label": "Items",
+                                            "required": true
+                                        }
+                                    ],
+                                    "type": "array",
+                                    "label": "Bundles",
+                                    "required": true
+                                }
+                            ],
+                            "interface": [
+                                {
+                                    "name": "run",
+                                    "type": "text",
+                                    "label": "run"
+                                },
+                                {
+                                    "name": "file_name",
+                                    "type": "text",
+                                    "label": "file_name"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 29,
+                        "module": "http:MakeRequest",
+                        "version": 4,
+                        "parameters": {
+                            "tlsType": "",
+                            "proxyKeychain": "",
+                            "apiKeyKeychain": 154742,
+                            "authenticationType": "apiKey"
+                        },
+                        "mapper": {
+                            "url": "https://generativelanguage.googleapis.com/v1beta/fileSearchStores/pmassistantkbstore-bzlwxsecjuxx:importFile",
+                            "method": "post",
+                            "headers": [
+                                {
+                                    "name": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "contentType": "json",
+                            "inputMethod": "jsonString",
+                            "shareCookies": false,
+                            "parseResponse": true,
+                            "allowRedirects": true,
+                            "queryParameters": [
+                                {
+                                    "name": "key",
+                                    "value": "AIzaSyBOwSSFqFpGVA0_1FZBTdntrQO-X3StMvY"
+                                }
+                            ],
+                            "stopOnHttpError": true,
+                            "jsonStringBodyContent": "{\r\n  \"fileName\": \"{{6.file_name}}\",\r\n  \"customMetadata\": [\r\n    { \"key\": \"topic\", \"stringValue\": \"general_questions\" },\r\n    { \"key\": \"voice_style\", \"stringValue\": \"fast_track\" },\r\n    { \"key\": \"source_version\", \"stringValue\": \"2025-11-15\" }\r\n  ],\r\n  \"chunkingConfig\": {\r\n    \"whiteSpaceConfig\": {\r\n      \"maxTokensPerChunk\": 400,\r\n      \"maxOverlapTokens\": 70\r\n    }\r\n  }\r\n}",
+                            "requestCompressedContent": true
+                        },
+                        "metadata": {
+                            "designer": {
+                                "x": 300,
+                                "y": 1200,
+                                "name": "Import/Associate File"
+                            },
+                            "restore": {
+                                "expect": {
+                                    "method": {
+                                        "mode": "chose",
+                                        "label": "POST"
+                                    },
+                                    "headers": {
+                                        "mode": "chose",
+                                        "items": [
+                                            null
+                                        ]
+                                    },
+                                    "contentType": {
+                                        "label": "application/jsonEnter data in the JSON format, as a string or using a data structure."
+                                    },
+                                    "inputMethod": {
+                                        "label": "JSON stringEnter the JSON body as a raw text string. If values contain JSON reserved characters, you must escape them manually."
+                                    },
+                                    "shareCookies": {
+                                        "mode": "chose"
+                                    },
+                                    "parseResponse": {
+                                        "mode": "chose"
+                                    },
+                                    "allowRedirects": {
+                                        "mode": "chose"
+                                    },
+                                    "paginationType": {
+                                        "label": "Empty"
+                                    },
+                                    "queryParameters": {
+                                        "mode": "chose",
+                                        "items": [
+                                            null
+                                        ]
+                                    },
+                                    "stopOnHttpError": {
+                                        "mode": "chose"
+                                    },
+                                    "requestCompressedContent": {
+                                        "mode": "chose"
+                                    }
+                                },
+                                "parameters": {
+                                    "tlsType": {
+                                        "label": "Empty"
+                                    },
+                                    "proxyKeychain": {
+                                        "label": "Choose a key"
+                                    },
+                                    "apiKeyKeychain": {
+                                        "label": "PM_gemini_key"
+                                    },
+                                    "authenticationType": {
+                                        "label": "API keyUse when the service requires an API key."
+                                    }
+                                }
+                            },
+                            "parameters": [
+                                {
+                                    "name": "authenticationType",
+                                    "type": "select",
+                                    "label": "Authentication type",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "noAuth",
+                                            "apiKey",
+                                            "basicAuth",
+                                            "oAuth"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "tlsType",
+                                    "type": "select",
+                                    "label": "Transport layer security (TLS)",
+                                    "validate": {
+                                        "enum": [
+                                            "mTls",
+                                            "tls"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "proxyKeychain",
+                                    "type": "keychain:proxy",
+                                    "label": "Proxy"
+                                },
+                                {
+                                    "name": "apiKeyKeychain",
+                                    "type": "keychain:apikeyauth",
+                                    "label": "Credentials",
+                                    "required": true
+                                }
+                            ],
+                            "expect": [
+                                {
+                                    "name": "url",
+                                    "type": "url",
+                                    "label": "URL",
+                                    "required": true
+                                },
+                                {
+                                    "name": "method",
+                                    "type": "select",
+                                    "label": "Method",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "get",
+                                            "head",
+                                            "post",
+                                            "put",
+                                            "patch",
+                                            "delete",
+                                            "options"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "headers",
+                                    "spec": {
+                                        "name": "value",
+                                        "spec": [
+                                            {
+                                                "name": "name",
+                                                "type": "text",
+                                                "label": "Name",
+                                                "required": true,
+                                                "validate": {
+                                                    "pattern": "^[-!#$%&'*+.^_`|~0-9A-Za-z]+$"
+                                                }
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": "text",
+                                                "label": "Value"
+                                            }
+                                        ],
+                                        "type": "collection",
+                                        "label": "Header"
+                                    },
+                                    "type": "array",
+                                    "label": "Headers"
+                                },
+                                {
+                                    "name": "queryParameters",
+                                    "spec": {
+                                        "name": "value",
+                                        "spec": [
+                                            {
+                                                "name": "name",
+                                                "type": "text",
+                                                "label": "Name",
+                                                "required": true
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": "text",
+                                                "label": "Value"
+                                            }
+                                        ],
+                                        "type": "collection",
+                                        "label": "Parameter"
+                                    },
+                                    "type": "array",
+                                    "label": "Query parameters"
+                                },
+                                {
+                                    "name": "contentType",
+                                    "type": "select",
+                                    "label": "Body content type",
+                                    "validate": {
+                                        "enum": [
+                                            "json",
+                                            "multipart",
+                                            "urlEncoded",
+                                            "custom"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "parseResponse",
+                                    "type": "boolean",
+                                    "label": "Parse response",
+                                    "required": true
+                                },
+                                {
+                                    "name": "stopOnHttpError",
+                                    "type": "boolean",
+                                    "label": "Return error if HTTP request fails",
+                                    "required": true
+                                },
+                                {
+                                    "name": "timeout",
+                                    "type": "uinteger",
+                                    "label": "Timeout",
+                                    "validate": {
+                                        "max": 300,
+                                        "min": 1
+                                    }
+                                },
+                                {
+                                    "name": "allowRedirects",
+                                    "type": "boolean",
+                                    "label": "Allow redirects",
+                                    "required": true
+                                },
+                                {
+                                    "name": "shareCookies",
+                                    "type": "boolean",
+                                    "label": "Share cookies with other HTTP modules",
+                                    "required": true
+                                },
+                                {
+                                    "name": "requestCompressedContent",
+                                    "type": "boolean",
+                                    "label": "Request compressed content",
+                                    "required": true
+                                },
+                                {
+                                    "name": "inputMethod",
+                                    "type": "select",
+                                    "label": "Body input method",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "dataStructure",
+                                            "jsonString"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "jsonStringBodyContent",
+                                    "type": "text",
+                                    "label": "Body content",
+                                    "required": true
+                                },
+                                {
+                                    "name": "paginationType",
+                                    "type": "select",
+                                    "label": "Pagination type",
+                                    "validate": {
+                                        "enum": [
+                                            "offsetBased",
+                                            "pageBased",
+                                            "urlBased",
+                                            "tokenBased"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "interface": [
+                                {
+                                    "name": "data",
+                                    "type": "any",
+                                    "label": "Data"
+                                },
+                                {
+                                    "name": "statusCode",
+                                    "type": "number",
+                                    "label": "Status Code"
+                                },
+                                {
+                                    "name": "headers",
+                                    "spec": [
+                                        {
+                                            "name": "content-length",
+                                            "type": "text",
+                                            "label": "Content-Length"
+                                        },
+                                        {
+                                            "name": "content-encoding",
+                                            "type": "text",
+                                            "label": "Content-Encoding"
+                                        },
+                                        {
+                                            "name": "content-type",
+                                            "type": "text",
+                                            "label": "Content-Type"
+                                        },
+                                        {
+                                            "name": "server",
+                                            "type": "text",
+                                            "label": "Server"
+                                        },
+                                        {
+                                            "name": "cache-control",
+                                            "type": "text",
+                                            "label": "Cache-Control"
+                                        },
+                                        {
+                                            "name": "set-cookie",
+                                            "spec": {
+                                                "type": "text"
+                                            },
+                                            "type": "array",
+                                            "label": "Set-Cookie"
+                                        }
+                                    ],
+                                    "type": "collection",
+                                    "label": "Headers"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                [
+                    {
+                        "id": 31,
+                        "module": "util:BasicTrigger",
+                        "version": 1,
+                        "parameters": {
+                            "values": [
+                                {
+                                    "spec": [
+                                        {
+                                            "name": "trigger",
+                                            "value": "yes"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "mapper": {},
+                        "metadata": {
+                            "designer": {
+                                "x": 0,
+                                "y": 1500,
+                                "messages": [
+                                    {
+                                        "category": "link",
+                                        "severity": "warning",
+                                        "message": "A trigger must be the first module in a scenario."
+                                    }
+                                ]
+                            },
+                            "restore": {
+                                "parameters": {
+                                    "values": {
+                                        "items": [
+                                            {
+                                                "spec": {
+                                                    "mode": "chose",
+                                                    "items": [
+                                                        null
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "parameters": [
+                                {
+                                    "name": "values",
+                                    "spec": [
+                                        {
+                                            "name": "spec",
+                                            "spec": [
+                                                {
+                                                    "name": "name",
+                                                    "type": "text",
+                                                    "label": "Name",
+                                                    "required": true
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "type": "text",
+                                                    "label": "Value",
+                                                    "required": true
+                                                }
+                                            ],
+                                            "type": "array",
+                                            "label": "Items",
+                                            "required": true
+                                        }
+                                    ],
+                                    "type": "array",
+                                    "label": "Bundles",
+                                    "required": true
+                                }
+                            ],
+                            "interface": [
+                                {
+                                    "name": "trigger",
+                                    "type": "text",
+                                    "label": "trigger"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 32,
+                        "module": "http:MakeRequest",
+                        "version": 4,
+                        "parameters": {
+                            "authenticationType": "apiKey",
+                            "tlsType": "",
+                            "proxyKeychain": "",
+                            "apiKeyKeychain": 154742
+                        },
+                        "mapper": {
+                            "url": "https://generativelanguage.googleapis.com/v1beta/fileSearchStores",
+                            "method": "get",
+                            "headers": [
+                                {
+                                    "name": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "queryParameters": [
+                                {
+                                    "name": "pageSize",
+                                    "value": "10"
+                                },
+                                {
+                                    "name": "key",
+                                    "value": "AIzaSyBOwSSFqFpGVA0_1FZBTdntrQO-X3StMvY"
+                                }
+                            ],
+                            "parseResponse": true,
+                            "stopOnHttpError": true,
+                            "allowRedirects": true,
+                            "shareCookies": false,
+                            "requestCompressedContent": true
+                        },
+                        "metadata": {
+                            "designer": {
+                                "x": 300,
+                                "y": 1500,
+                                "name": "List Store"
+                            },
+                            "restore": {
+                                "parameters": {
+                                    "authenticationType": {
+                                        "label": "API keyUse when the service requires an API key."
+                                    },
+                                    "tlsType": {
+                                        "label": "Empty"
+                                    },
+                                    "proxyKeychain": {
+                                        "label": "Choose a key"
+                                    },
+                                    "apiKeyKeychain": {
+                                        "label": "PM_gemini_key"
+                                    }
+                                },
+                                "expect": {
+                                    "method": {
+                                        "mode": "chose",
+                                        "label": "GET"
+                                    },
+                                    "headers": {
+                                        "mode": "chose",
+                                        "items": [
+                                            null
+                                        ]
+                                    },
+                                    "queryParameters": {
+                                        "mode": "chose",
+                                        "items": [
+                                            null,
+                                            null
+                                        ]
+                                    },
+                                    "contentType": {
+                                        "label": "Empty"
+                                    },
+                                    "parseResponse": {
+                                        "mode": "chose"
+                                    },
+                                    "stopOnHttpError": {
+                                        "mode": "chose"
+                                    },
+                                    "allowRedirects": {
+                                        "mode": "chose"
+                                    },
+                                    "shareCookies": {
+                                        "mode": "chose"
+                                    },
+                                    "requestCompressedContent": {
+                                        "mode": "chose"
+                                    },
+                                    "paginationType": {
+                                        "label": "Empty"
+                                    }
+                                }
+                            },
+                            "parameters": [
+                                {
+                                    "name": "authenticationType",
+                                    "type": "select",
+                                    "label": "Authentication type",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "noAuth",
+                                            "apiKey",
+                                            "basicAuth",
+                                            "oAuth"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "tlsType",
+                                    "type": "select",
+                                    "label": "Transport layer security (TLS)",
+                                    "validate": {
+                                        "enum": [
+                                            "mTls",
+                                            "tls"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "proxyKeychain",
+                                    "type": "keychain:proxy",
+                                    "label": "Proxy"
+                                },
+                                {
+                                    "name": "apiKeyKeychain",
+                                    "type": "keychain:apikeyauth",
+                                    "label": "Credentials",
+                                    "required": true
+                                }
+                            ],
+                            "expect": [
+                                {
+                                    "name": "url",
+                                    "type": "url",
+                                    "label": "URL",
+                                    "required": true
+                                },
+                                {
+                                    "name": "method",
+                                    "type": "select",
+                                    "label": "Method",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "get",
+                                            "head",
+                                            "post",
+                                            "put",
+                                            "patch",
+                                            "delete",
+                                            "options"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "headers",
+                                    "type": "array",
+                                    "label": "Headers",
+                                    "spec": {
+                                        "name": "value",
+                                        "label": "Header",
+                                        "type": "collection",
+                                        "spec": [
+                                            {
+                                                "name": "name",
+                                                "label": "Name",
+                                                "type": "text",
+                                                "required": true,
+                                                "validate": {
+                                                    "pattern": "^[-!#$%&'*+.^_`|~0-9A-Za-z]+$"
+                                                }
+                                            },
+                                            {
+                                                "name": "value",
+                                                "label": "Value",
+                                                "type": "text"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "queryParameters",
+                                    "type": "array",
+                                    "label": "Query parameters",
+                                    "spec": {
+                                        "name": "value",
+                                        "label": "Parameter",
+                                        "type": "collection",
+                                        "spec": [
+                                            {
+                                                "name": "name",
+                                                "label": "Name",
+                                                "type": "text",
+                                                "required": true
+                                            },
+                                            {
+                                                "name": "value",
+                                                "label": "Value",
+                                                "type": "text"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "contentType",
+                                    "type": "select",
+                                    "label": "Body content type",
+                                    "validate": {
+                                        "enum": [
+                                            "json",
+                                            "multipart",
+                                            "urlEncoded",
+                                            "custom"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "parseResponse",
+                                    "type": "boolean",
+                                    "label": "Parse response",
+                                    "required": true
+                                },
+                                {
+                                    "name": "stopOnHttpError",
+                                    "type": "boolean",
+                                    "label": "Return error if HTTP request fails",
+                                    "required": true
+                                },
+                                {
+                                    "name": "timeout",
+                                    "type": "uinteger",
+                                    "label": "Timeout",
+                                    "validate": {
+                                        "min": 1,
+                                        "max": 300
+                                    }
+                                },
+                                {
+                                    "name": "allowRedirects",
+                                    "type": "boolean",
+                                    "label": "Allow redirects",
+                                    "required": true
+                                },
+                                {
+                                    "name": "shareCookies",
+                                    "type": "boolean",
+                                    "label": "Share cookies with other HTTP modules",
+                                    "required": true
+                                },
+                                {
+                                    "name": "requestCompressedContent",
+                                    "type": "boolean",
+                                    "label": "Request compressed content",
+                                    "required": true
+                                },
+                                {
+                                    "name": "paginationType",
+                                    "type": "select",
+                                    "label": "Pagination type",
+                                    "validate": {
+                                        "enum": [
+                                            "offsetBased",
+                                            "pageBased",
+                                            "urlBased",
+                                            "tokenBased"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "interface": [
+                                {
+                                    "name": "data",
+                                    "label": "Data",
+                                    "type": "any"
+                                },
+                                {
+                                    "name": "statusCode",
+                                    "label": "Status Code",
+                                    "type": "number"
+                                },
+                                {
+                                    "name": "headers",
+                                    "label": "Headers",
+                                    "type": "collection",
+                                    "spec": [
+                                        {
+                                            "name": "content-length",
+                                            "label": "Content-Length",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "name": "content-encoding",
+                                            "label": "Content-Encoding",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "name": "content-type",
+                                            "label": "Content-Type",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "name": "server",
+                                            "label": "Server",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "name": "cache-control",
+                                            "label": "Cache-Control",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "name": "set-cookie",
+                                            "label": "Set-Cookie",
+                                            "type": "array",
+                                            "spec": {
+                                                "type": "text"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ],
+                [
+                    {
+                        "id": 12,
+                        "module": "gitlab:GeFileRepository",
+                        "version": 2,
+                        "parameters": {
+                            "__IMTCONN__": 13402906
+                        },
+                        "mapper": {
+                            "ref": "main",
+                            "filePath": "src/kb/pm_assistant_kb_v3.md",
+                            "projectId": 70964115
+                        },
+                        "metadata": {
+                            "designer": {
+                                "x": 0,
+                                "y": 300,
+                                "messages": [
+                                    {
+                                        "category": "link",
+                                        "severity": "warning",
+                                        "message": "The module is not connected to the data flow."
+                                    }
+                                ]
+                            },
+                            "restore": {
+                                "expect": {
+                                    "projectId": {
+                                        "mode": "chose",
+                                        "label": "Patrick Michael / pm_assistant"
+                                    }
+                                },
+                                "parameters": {
+                                    "__IMTCONN__": {
+                                        "data": {
+                                            "scoped": "true",
+                                            "connection": "gitlab5"
+                                        },
+                                        "label": "PM_Gitlab_2026"
+                                    }
+                                }
+                            },
+                            "parameters": [
+                                {
+                                    "name": "__IMTCONN__",
+                                    "type": "account:gitlab3,gitlab5",
+                                    "label": "Connection",
+                                    "required": true
+                                }
+                            ],
+                            "expect": [
+                                {
+                                    "mode": "edit",
+                                    "name": "projectId",
+                                    "type": "select",
+                                    "label": "Project",
+                                    "required": true
+                                },
+                                {
+                                    "name": "filePath",
+                                    "type": "text",
+                                    "label": "File path",
+                                    "required": true
+                                },
+                                {
+                                    "name": "ref",
+                                    "type": "text",
+                                    "label": "Ref",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 13,
+                        "module": "util:SetVariable2",
+                        "version": 1,
+                        "parameters": {},
+                        "mapper": {
+                            "name": "pm_kb_gitlab",
+                            "scope": "roundtrip",
+                            "value": "{{toString(toBinary(12.content; \"base64\"))}}"
+                        },
+                        "metadata": {
+                            "designer": {
+                                "x": 300,
+                                "y": 300,
+                                "name": "Convert Base64 to Text"
+                            },
+                            "restore": {
+                                "expect": {
+                                    "scope": {
+                                        "label": "One cycle"
+                                    }
+                                }
+                            },
+                            "expect": [
+                                {
+                                    "name": "name",
+                                    "type": "text",
+                                    "label": "Variable name",
+                                    "required": true
+                                },
+                                {
+                                    "name": "scope",
+                                    "type": "select",
+                                    "label": "Variable lifetime",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "roundtrip",
+                                            "execution"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "value",
+                                    "type": "any",
+                                    "label": "Variable value"
+                                }
+                            ],
+                            "interface": [
+                                {
+                                    "name": "pm_kb_gitlab",
+                                    "type": "any",
+                                    "label": "pm_kb_gitlab"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 24,
+                        "module": "google-drive:uploadAFile",
+                        "version": 4,
+                        "parameters": {
+                            "__IMTCONN__": 3322973
+                        },
+                        "mapper": {
+                            "data": "{{13.pm_kb_gitlab}}",
+                            "select": "value",
+                            "convert": false,
+                            "filename": "{{12.file_name}}",
+                            "folderId": "/17poR9Y5TVzgCDEkWqnYwykhVMrfkBwab/1MM3dA0GljPCrSh4_oxeOHiGBAJauU3xk",
+                            "destination": "drive"
+                        },
+                        "metadata": {
+                            "designer": {
+                                "x": 600,
+                                "y": 300,
+                                "name": "Upload to Google Drive"
+                            },
+                            "restore": {
+                                "expect": {
+                                    "select": {
+                                        "label": "Select from the list"
+                                    },
+                                    "folderId": {
+                                        "mode": "chose",
+                                        "path": [
+                                            "Pm_ai",
+                                            "pm_web_assistant"
+                                        ]
+                                    },
+                                    "destination": {
+                                        "label": "My Drive"
+                                    }
+                                },
+                                "parameters": {
+                                    "__IMTCONN__": {
+                                        "data": {
+                                            "scoped": "true",
+                                            "connection": "google-restricted"
+                                        },
+                                        "label": "Google Patrick (patrick@patrick.co.za)"
+                                    }
+                                }
+                            },
+                            "parameters": [
+                                {
+                                    "name": "__IMTCONN__",
+                                    "type": "account:google-restricted",
+                                    "label": "Connection",
+                                    "required": true
+                                }
+                            ],
+                            "expect": [
+                                {
+                                    "type": "hidden"
+                                },
+                                {
+                                    "name": "select",
+                                    "type": "select",
+                                    "label": "Enter a Folder ID",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "map",
+                                            "value"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "title",
+                                    "type": "text",
+                                    "label": "New File Name"
+                                },
+                                {
+                                    "name": "filename",
+                                    "type": "text",
+                                    "label": "File Name",
+                                    "required": true
+                                },
+                                {
+                                    "name": "data",
+                                    "type": "buffer",
+                                    "label": "Data",
+                                    "required": true
+                                },
+                                {
+                                    "name": "convert",
+                                    "type": "boolean",
+                                    "label": "Convert a File",
+                                    "required": true
+                                },
+                                {
+                                    "name": "destination",
+                                    "type": "select",
+                                    "label": "New Drive Location",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "drive",
+                                            "share",
+                                            "team"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "folderId",
+                                    "type": "folder",
+                                    "label": "New Folder Location",
+                                    "required": true
+                                }
+                            ],
+                            "advanced": true
+                        }
+                    },
+                    {
+                        "id": 26,
+                        "module": "google-drive:getAFile",
+                        "version": 4,
+                        "parameters": {
+                            "__IMTCONN__": 3322973
+                        },
+                        "mapper": {
+                            "file": "{{24.id}}",
+                            "select": "map",
+                            "formatDrawings": "image/jpeg",
+                            "formatDocuments": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                            "formatSpreadsheets": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                            "formatPresentations": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+                        },
+                        "metadata": {
+                            "designer": {
+                                "x": 900,
+                                "y": 300,
+                                "name": "Retrieve from Google Drive"
+                            },
+                            "restore": {
+                                "expect": {
+                                    "select": {
+                                        "label": "Enter manually"
+                                    },
+                                    "formatDrawings": {
+                                        "label": "JPEG"
+                                    },
+                                    "formatDocuments": {
+                                        "label": "MS Word Document"
+                                    },
+                                    "formatSpreadsheets": {
+                                        "label": "MS Excel"
+                                    },
+                                    "formatPresentations": {
+                                        "label": "MS PowerPoint"
+                                    }
+                                },
+                                "parameters": {
+                                    "__IMTCONN__": {
+                                        "data": {
+                                            "scoped": "true",
+                                            "connection": "google-restricted"
+                                        },
+                                        "label": "Google Patrick (patrick@patrick.co.za)"
+                                    }
+                                }
+                            },
+                            "parameters": [
+                                {
+                                    "name": "__IMTCONN__",
+                                    "type": "account:google-restricted",
+                                    "label": "Connection",
+                                    "required": true
+                                }
+                            ],
+                            "expect": [
+                                {
+                                    "type": "hidden"
+                                },
+                                {
+                                    "name": "select",
+                                    "type": "select",
+                                    "label": "Enter a File ID",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "map",
+                                            "value"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "formatDocuments",
+                                    "type": "select",
+                                    "label": "Convert Google Documents Files to Format",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                                            "application/pdf",
+                                            "application/vnd.oasis.opendocument.text",
+                                            "text/html",
+                                            "text/plain",
+                                            "application/rtf",
+                                            "text/markdown"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "formatSpreadsheets",
+                                    "type": "select",
+                                    "label": "Convert Google Spreadsheets Files to Format",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                                            "application/x-vnd.oasis.opendocument.spreadsheet",
+                                            "application/pdf",
+                                            "text/csv"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "formatPresentations",
+                                    "type": "select",
+                                    "label": "Convert Google Slides Files to Format",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                                            "application/pdf"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "formatDrawings",
+                                    "type": "select",
+                                    "label": "Convert Google Drawings Files to Format",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "image/jpeg",
+                                            "image/png",
+                                            "image/svg+xml",
+                                            "application/pdf"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "file",
+                                    "type": "text",
+                                    "label": "File ID",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 27,
+                        "module": "http:MakeRequest",
+                        "version": 4,
+                        "parameters": {
+                            "tlsType": "",
+                            "proxyKeychain": "",
+                            "apiKeyKeychain": 154742,
+                            "authenticationType": "apiKey"
+                        },
+                        "mapper": {
+                            "url": "https://generativelanguage.googleapis.com/upload/v1beta/files",
+                            "method": "post",
+                            "contentType": "multipart",
+                            "shareCookies": false,
+                            "parseResponse": true,
+                            "allowRedirects": true,
+                            "queryParameters": [
+                                {
+                                    "name": "key",
+                                    "value": "AIzaSyBOwSSFqFpGVA0_1FZBTdntrQO-X3StMvY"
+                                }
+                            ],
+                            "stopOnHttpError": true,
+                            "multipartBodyContent": [
+                                {
+                                    "data": "{{26.data}}",
+                                    "name": "file",
+                                    "fileName": "{{26.name}}",
+                                    "multipartFieldType": "file"
+                                }
+                            ],
+                            "requestCompressedContent": true
+                        },
+                        "metadata": {
+                            "designer": {
+                                "x": 1200,
+                                "y": 300,
+                                "name": "Upload File"
+                            },
+                            "restore": {
+                                "expect": {
+                                    "method": {
+                                        "mode": "chose",
+                                        "label": "POST"
+                                    },
+                                    "headers": {
+                                        "mode": "chose"
+                                    },
+                                    "contentType": {
+                                        "label": "multipart/form-data (supports file uploads)Enter files and form data as key-value pairs."
+                                    },
+                                    "shareCookies": {
+                                        "mode": "chose"
+                                    },
+                                    "parseResponse": {
+                                        "mode": "chose"
+                                    },
+                                    "allowRedirects": {
+                                        "mode": "chose"
+                                    },
+                                    "paginationType": {
+                                        "label": "Empty"
+                                    },
+                                    "queryParameters": {
+                                        "mode": "chose",
+                                        "items": [
+                                            null
+                                        ]
+                                    },
+                                    "stopOnHttpError": {
+                                        "mode": "chose"
+                                    },
+                                    "multipartBodyContent": {
+                                        "mode": "chose",
+                                        "items": [
+                                            {
+                                                "multipartFieldType": {
+                                                    "mode": "chose",
+                                                    "label": "File"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "requestCompressedContent": {
+                                        "mode": "chose"
+                                    }
+                                },
+                                "parameters": {
+                                    "tlsType": {
+                                        "label": "Empty"
+                                    },
+                                    "proxyKeychain": {
+                                        "label": "Choose a key"
+                                    },
+                                    "apiKeyKeychain": {
+                                        "label": "PM_gemini_key"
+                                    },
+                                    "authenticationType": {
+                                        "label": "API keyUse when the service requires an API key."
+                                    }
+                                }
+                            },
+                            "parameters": [
+                                {
+                                    "name": "authenticationType",
+                                    "type": "select",
+                                    "label": "Authentication type",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "noAuth",
+                                            "apiKey",
+                                            "basicAuth",
+                                            "oAuth"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "tlsType",
+                                    "type": "select",
+                                    "label": "Transport layer security (TLS)",
+                                    "validate": {
+                                        "enum": [
+                                            "mTls",
+                                            "tls"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "proxyKeychain",
+                                    "type": "keychain:proxy",
+                                    "label": "Proxy"
+                                },
+                                {
+                                    "name": "apiKeyKeychain",
+                                    "type": "keychain:apikeyauth",
+                                    "label": "Credentials",
+                                    "required": true
+                                }
+                            ],
+                            "expect": [
+                                {
+                                    "name": "url",
+                                    "type": "url",
+                                    "label": "URL",
+                                    "required": true
+                                },
+                                {
+                                    "name": "method",
+                                    "type": "select",
+                                    "label": "Method",
+                                    "required": true,
+                                    "validate": {
+                                        "enum": [
+                                            "get",
+                                            "head",
+                                            "post",
+                                            "put",
+                                            "patch",
+                                            "delete",
+                                            "options"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "headers",
+                                    "spec": {
+                                        "name": "value",
+                                        "spec": [
+                                            {
+                                                "name": "name",
+                                                "type": "text",
+                                                "label": "Name",
+                                                "required": true,
+                                                "validate": {
+                                                    "pattern": "^[-!#$%&'*+.^_`|~0-9A-Za-z]+$"
+                                                }
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": "text",
+                                                "label": "Value"
+                                            }
+                                        ],
+                                        "type": "collection",
+                                        "label": "Header"
+                                    },
+                                    "type": "array",
+                                    "label": "Headers"
+                                },
+                                {
+                                    "name": "queryParameters",
+                                    "spec": {
+                                        "name": "value",
+                                        "spec": [
+                                            {
+                                                "name": "name",
+                                                "type": "text",
+                                                "label": "Name",
+                                                "required": true
+                                            },
+                                            {
+                                                "name": "value",
+                                                "type": "text",
+                                                "label": "Value"
+                                            }
+                                        ],
+                                        "type": "collection",
+                                        "label": "Parameter"
+                                    },
+                                    "type": "array",
+                                    "label": "Query parameters"
+                                },
+                                {
+                                    "name": "contentType",
+                                    "type": "select",
+                                    "label": "Body content type",
+                                    "validate": {
+                                        "enum": [
+                                            "json",
+                                            "multipart",
+                                            "urlEncoded",
+                                            "custom"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "parseResponse",
+                                    "type": "boolean",
+                                    "label": "Parse response",
+                                    "required": true
+                                },
+                                {
+                                    "name": "stopOnHttpError",
+                                    "type": "boolean",
+                                    "label": "Return error if HTTP request fails",
+                                    "required": true
+                                },
+                                {
+                                    "name": "timeout",
+                                    "type": "uinteger",
+                                    "label": "Timeout",
+                                    "validate": {
+                                        "max": 300,
+                                        "min": 1
+                                    }
+                                },
+                                {
+                                    "name": "allowRedirects",
+                                    "type": "boolean",
+                                    "label": "Allow redirects",
+                                    "required": true
+                                },
+                                {
+                                    "name": "shareCookies",
+                                    "type": "boolean",
+                                    "label": "Share cookies with other HTTP modules",
+                                    "required": true
+                                },
+                                {
+                                    "name": "requestCompressedContent",
+                                    "type": "boolean",
+                                    "label": "Request compressed content",
+                                    "required": true
+                                },
+                                {
+                                    "name": "multipartBodyContent",
+                                    "spec": {
+                                        "name": "value",
+                                        "spec": [
+                                            {
+                                                "name": "name",
+                                                "type": "text",
+                                                "label": "Name",
+                                                "required": true
+                                            },
+                                            {
+                                                "name": "multipartFieldType",
+                                                "type": "select",
+                                                "label": "Field type",
+                                                "options": [
+                                                    {
+                                                        "label": "Text",
+                                                        "value": "text",
+                                                        "nested": [
+                                                            {
+                                                                "name": "value",
+                                                                "type": "text",
+                                                                "label": "Value"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "label": "File",
+                                                        "value": "file",
+                                                        "nested": [
+                                                            {
+                                                                "name": "data",
+                                                                "type": "buffer",
+                                                                "label": "Data",
+                                                                "semantic": "file:data"
+                                                            },
+                                                            {
+                                                                "name": "fileName",
+                                                                "type": "filename",
+                                                                "label": "File name",
+                                                                "semantic": "file:name"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "required": true
+                                            }
+                                        ],
+                                        "type": "collection",
+                                        "label": "Field"
+                                    },
+                                    "type": "array",
+                                    "label": "Body content"
+                                },
+                                {
+                                    "name": "paginationType",
+                                    "type": "select",
+                                    "label": "Pagination type",
+                                    "validate": {
+                                        "enum": [
+                                            "offsetBased",
+                                            "pageBased",
+                                            "urlBased",
+                                            "tokenBased"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "interface": [
+                                {
+                                    "name": "data",
+                                    "type": "any",
+                                    "label": "Data"
+                                },
+                                {
+                                    "name": "statusCode",
+                                    "type": "number",
+                                    "label": "Status Code"
+                                },
+                                {
+                                    "name": "headers",
+                                    "spec": [
+                                        {
+                                            "name": "content-length",
+                                            "type": "text",
+                                            "label": "Content-Length"
+                                        },
+                                        {
+                                            "name": "content-encoding",
+                                            "type": "text",
+                                            "label": "Content-Encoding"
+                                        },
+                                        {
+                                            "name": "content-type",
+                                            "type": "text",
+                                            "label": "Content-Type"
+                                        },
+                                        {
+                                            "name": "server",
+                                            "type": "text",
+                                            "label": "Server"
+                                        },
+                                        {
+                                            "name": "cache-control",
+                                            "type": "text",
+                                            "label": "Cache-Control"
+                                        },
+                                        {
+                                            "name": "set-cookie",
+                                            "spec": {
+                                                "type": "text"
+                                            },
+                                            "type": "array",
+                                            "label": "Set-Cookie"
+                                        }
+                                    ],
+                                    "type": "collection",
+                                    "label": "Headers"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            ]
+        },
+        "zone": "eu2.make.com",
+        "notes": []
+    }
+}

@@ -33,6 +33,24 @@ Summarize the optimal path to build a Gemini File Search–backed agent that sea
 5. **Monitoring & governance**: Track ingestion counts (active/pending/failed) from store metadata, alert on failed operations, and log citations to support debugging and compliance.【F:context/geminai_file_search_api_reference.md†L342-L360】
 6. **Deployment shape**: Package as a small service (e.g., FastAPI/Express) with an internal SDK; design for pluggable auth (API keys or OAuth) and rate limits to protect the Gemini quota.
 
+## Plain-English Overview (how it works)
+1) **Add your documents**: You drop files into the system. They get broken into small pieces, labeled, and stored in a Google Gemini File Search Store so we can search them quickly.
+2) **Ask a question**: A user (or voice agent) sends a question. The service points Gemini to the right File Search Store(s) and asks for the most relevant pieces.
+3) **Find the best snippets**: Gemini pulls the most relevant chunks, using the metadata and chunking we set up earlier to stay focused.
+4) **Craft a short answer**: Gemini turns those snippets into a concise reply that’s easy to read or speak aloud, following the “short JSON answer” prompt from the blueprint.
+5) **Return JSON**: The service returns a simple JSON payload with the answer text so it can plug into voice or web UIs without extra formatting.
+
+## Frontend vs. Backend notes
+- **Frontend**: Only needs to collect a question and display an answer. A lightweight UI (web or voice client) is enough because all heavy lifting happens on the server. Include a loading state and show citations/snippets if desired.
+- **Backend**: Handles store creation, file ingestion, operation polling, and the question→File Search→answer flow. This is where auth, rate limiting, retries, logging, and monitoring live.
+
+## Can this be a Next.js project on Vercel?
+- Yes. A Next.js app on Vercel can host the frontend pages and API routes. Use:
+  - **API Routes / Route Handlers** for `/api/ingest` (upload/import) and `/api/query` (ask questions).
+  - **Edge or Serverless functions** for the generate-and-search call; keep timeouts in mind and prefer background jobs (Vercel cron/queues or an external worker) for ingestion polling.
+  - **Environment variables** for Gemini credentials and store IDs.
+- If ingestion jobs are long-running, pair Vercel (frontend + query endpoint) with a small worker (e.g., a hosted queue/worker on Fly/Render/Supabase functions) to poll operations reliably.
+
 ## Suggested Implementation Phases
 1. **Foundation**: Build the Gemini client wrapper and operation polling utilities; add unit tests with mocked HTTP responses.
 2. **Ingestion service**: Implement upload/import endpoints plus background polling; persist document metadata and operation status.
